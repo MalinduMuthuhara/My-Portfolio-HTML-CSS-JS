@@ -313,3 +313,69 @@ body::after {
     transform: scale(0.97);
 }
 /*Contact me button end*/
+
+
+/* EDUCATION SECTION */
+
+.education-section{
+    margin-top:350px;
+    padding:60px 10%;
+}
+
+.education-title{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+    font-weight:700;
+    background:linear-gradient(45deg,#ff6b6b,#4ecdc4,#45b7d1);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.education-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.education-card{
+    width:320px;
+    padding:30px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.education-card h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.edu-degree{
+    color:#4ecdc4;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.edu-year{
+    color:#f9ca24;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.edu-desc{
+    font-size:14px;
+    color:rgba(255,255,255,0.8);
+}
+
+/* hover effect */
+
+.education-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 40px rgba(255,107,107,0.4);
+}
