@@ -61,7 +61,7 @@ body::before {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    width: 18ch; /* enough for "Malindu Muthuhara" */
+    width: 18ch; /*Malindu Muthuhara Name*/
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #6c5ce7);
     background-size: 400% 400%;
     -webkit-background-clip: text;
@@ -249,8 +249,8 @@ body::after {
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* Full width for centering */
     flex: 0 0 100%;
+    scroll-margin-top: 100px;
 }
 
 .about-section {
@@ -331,8 +331,9 @@ body::after {
 /* EDUCATION SECTION */
 
 .education-section{
-    margin-top:350px;
+    margin-top:100px;
     padding:60px 10%;
+    scroll-margin-top: 100px;
 }
 
 .education-title{
@@ -482,10 +483,11 @@ body::after {
 /*Skills*/
 
 .skills-section {
-    margin-top: 350px;
-    padding: 60px 10%;
+    margin-top: 80px;
+    padding: 20px 10% 60px 10%;
     position: relative;
     overflow: hidden;
+    scroll-margin-top: 120px;
 }
 
 
@@ -661,11 +663,13 @@ body::after {
 ///////////////
 /*Project*/
 .projects-section {
-    margin-top: 350px;
+    margin-top: 100px;
     padding: 60px 10%;
+    scroll-margin-top: 100px;
 }
 
 .project-title {
+    margin-top:100px;
     text-align: center;
     font-size: 40px;
     margin-bottom: 60px;
