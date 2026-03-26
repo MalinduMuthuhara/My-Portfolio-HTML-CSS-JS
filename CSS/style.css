@@ -475,3 +475,242 @@ body::after {
         font-size: 1.2rem;
     }
 }
+
+////////////////////////////////////////////////////////////v//////////////////////////////
+///////////////
+
+/*Skills*/
+
+.skills-section {
+    margin-top: 350px;
+    padding: 60px 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.skills-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 3-column grid — matches .education-container flex layout */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card — matches .education-card + .about-section-left */
+.skills-card {
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top shimmer line on card */
+.skills-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+    opacity: 0.6;
+}
+
+/* Hover — matches .education-card:hover */
+.skills-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+}
+
+/* Card icon box */
+.skills-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #4ecdc4;
+}
+
+/* Card title — matches .edu-degree style */
+.skills-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #4ecdc4;
+    margin: 0 0 20px;
+}
+
+/* Individual skill row */
+.skill-row {
+    margin-bottom: 14px;
+}
+
+.skill-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+/* Skill name — matches .edu-desc */
+.skill-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Percentage — matches .edu-year color */
+.skill-pct {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f9ca24;
+}
+
+/* Progress track */
+.skill-track {
+    height: 5px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 99px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Animated fill bar — gradient matches portfolio palette */
+.skill-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+    background-size: 200% 200%;
+    animation: barGradient 4s ease infinite;
+    box-shadow: 0 0 8px rgba(78, 205, 196, 0.5);
+    transition: width 1.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+/* Tip glow dot at end of bar */
+.skill-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 99px;
+    filter: blur(2px);
+}
+
+/* Matches gradientShift from your existing navbar logo */
+@keyframes barGradient {
+    0%, 100% { background-position: 0% 50%; }
+    50%       { background-position: 100% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .skills-section {
+        padding: 60px 5%;
+    }
+    .skills-grid {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-card {
+        width: 100%;
+    }
+    .skills-section {
+        margin-top: 80px;
+        padding: 50px 5%;
+    }
+}
+
+/*Skills Section End*/
+
+////////////////////////////////////////////////////////////v//////////////////////////////
+///////////////
+/*Project*/
+.projects-section {
+    margin-top: 350px;
+    padding: 60px 10%;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    background: linear-gradient(45deg,#ff6b6b,#4ecdc4,#45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* GRID FIX */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Improve your card */
+.project-card {
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+}
+
+/* GitHub button */
+.project-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: #4ecdc4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    color: #fff;
+}
