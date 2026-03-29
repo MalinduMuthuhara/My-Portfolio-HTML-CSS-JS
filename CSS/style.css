@@ -240,6 +240,53 @@ body::after {
     transform: translateY(0) scale(0.98);
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
 }
+/* Image Eka Mobile Responsive*/
+.hero-section-right img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Hero Section Left Eka Mobile Responsive */
+@media (max-width: 768px){
+
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-section-left,
+    .hero-section-right{
+        max-width: 100%;
+    }
+
+    .hero-section-right{
+        margin-top: 30px;
+    }
+
+    .hero-section-left h1{
+        font-size: 28px;
+    }
+
+    .hero-section-left h4{
+        font-size: 18px;
+    }
+
+    .hero-section-left p{
+        font-size: 14px;
+    }
+
+    .download-btn{
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+/*END OF HERO SECTION LEFT Mobile Responsive*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////V//////////////////////////////////////////////////////*/
+
 /*ABOUT*/
 .about-title {
     text-align: center;
@@ -264,7 +311,8 @@ body::after {
 }
 
 .about-section-left {
-    flex: 0 0 400px;  /* Fixed width, no absolute */
+    flex:1;
+    min-width: 280px;
     padding: 40px;
     border-radius: 15px;
     background: rgba(255,255,255,0.05);
@@ -275,8 +323,8 @@ body::after {
 
 
 .about-section-right {
-    flex: 1;  /* Takes remaining space */
-    min-width: 500px;
+    flex: 2;
+    min-width: 280px;
     padding: 45px;
     border-radius: 25px;
     background: rgba(255,255,255,0.05);
@@ -325,6 +373,29 @@ body::after {
 .about-section-button:active{
     transform: scale(0.97);
 }
+
+/*Mobile responsive Media Query For About*/
+@media (max-width: 768px){
+
+    .about-section{
+        flex-direction: column;
+        padding: 50px 5%;
+        gap: 20px;
+    }
+
+    .about-section-left,
+    .about-section-right{
+        flex: 100%;
+        min-width: 100%;
+        padding: 25px;
+    }
+
+    .about-title{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}
+/*End Of About Mobile responsive*/
 
 
 
@@ -394,22 +465,41 @@ body::after {
     box-shadow:0 15px 40px rgba(255,107,107,0.4);
 }
 
-/*WORK EXPERIENCE */
-.work-experience-section{
-    margin-top:350px;
-    padding:60px 10%;
+/* Education Mobile Responsive */
+@media (max-width: 768px){
+
+    .education-section{
+        padding:40px 5%;
+    }
+
+    .education-title{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+
+    .education-container{
+        gap:20px;
+    }
+
+    .education-card{
+        width:100%;
+        padding:20px;
+    }
+
+    .education-card h3{
+        font-size:18px;
+    }
+
+    .edu-degree{
+        font-size:14px;
+    }
+
+    .edu-desc{
+        font-size:13px;
+    }
 }
 
-.work-experience-title{
-
-    text-align:center;
-    font-size:40px;
-    margin-bottom:60px;
-    font-weight:700;
-    background:linear-gradient(45deg,#ff6b6b,#4ecdc4,#45b7d1);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////
 /* Social Media Icons */
